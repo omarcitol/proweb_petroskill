@@ -32,4 +32,12 @@ Pasos para Crear el Repositorio
 4. Confirmar Ramas:
    - Verifica en el menú desplegable de ramas que las ramas "main", "staging", y "develop" están creadas.
    - https://github.com/omarcitol/proweb_petroskill/blob/main/PROWEB11.png
+   
 
+   # Evaluación Nro. 2  
+
+## Descripción  
+Esta rama contiene una landing page simple desarrollada solo con HTML. La estructura incluye secciones de "Sobre Nosotros", "Servicios" y "Contacto".  
+
+## Archivos  
+- "index.html": El archivo principal de la landing page.
