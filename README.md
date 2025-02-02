@@ -35,7 +35,7 @@ Pasos para Crear el Repositorio
    - Verifica en el menú desplegable de ramas que las ramas "main", "staging", y "develop" están creadas.
    - https://github.com/omarcitol/proweb_petroskill/blob/main/PROWEB11.png
 
-   # Evaluación Nro. 2
+   ## Evaluación Nro. 2
 
 ## Descripción
 
@@ -60,7 +60,7 @@ En esta evaluación se agregó dinamismo a la landing page utilizando el framewo
 - Se agregó una barra de navegación responsive.
 - Se utilizaron componentes de Bootstrap como tarjetas (`cards`) y listas (`list-group`).
 
-- Evaluación Nro. 4
+  ## Evaluación Nro. 4
 Descripción
 En esta evaluación se alojó la landing page en una plataforma de hosting utilizando GitHub Pages. Se configuró correctamente la rama y los archivos necesarios para que la página sea accesible en línea.
 
