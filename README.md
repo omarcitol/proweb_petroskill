@@ -59,3 +59,26 @@ En esta evaluación se agregó dinamismo a la landing page utilizando el framewo
 - Uso de clases de Bootstrap para mejorar el diseño y la responsividad.
 - Se agregó una barra de navegación responsive.
 - Se utilizaron componentes de Bootstrap como tarjetas (`cards`) y listas (`list-group`).
+
+- Evaluación Nro. 4
+Descripción
+En esta evaluación se alojó la landing page en una plataforma de hosting utilizando GitHub Pages. Se configuró correctamente la rama y los archivos necesarios para que la página sea accesible en línea.
+
+📌 URL del sitio web: https://omarcitol.github.io/proweb_petroskill/
+
+Pasos realizados
+
+Habilitación de GitHub Pages
+
+Se accedió a la configuración del repositorio (Settings > Pages).
+Se seleccionó la rama main como fuente de la página.
+Se guardaron los cambios y se generó la URL del sitio.
+Verificación de despliegue
+
+Se verificó que la página se cargue correctamente sin errores.
+Se probaron los enlaces y la navegación para confirmar su correcto funcionamiento.
+Correcciones y ajustes
+
+Se revisaron y corrigieron posibles errores en la estructura HTML.
+Se optimizó el código para asegurar compatibilidad con GitHub Pages.
+📌 Estado actual: ✅ La landing page está funcionando correctamente en GitHub Pages.
