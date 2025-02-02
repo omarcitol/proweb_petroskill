@@ -82,3 +82,18 @@ Correcciones y ajustes
 Se revisaron y corrigieron posibles errores en la estructura HTML.
 Se optimizó el código para asegurar compatibilidad con GitHub Pages.
 📌 Estado actual: ✅ La landing page está funcionando correctamente en GitHub Pages.
+
+## Evaluación Nro. 5
+
+### Descripción
+En esta evaluación, se agregó una sección de API a la landing page. La sección consume datos de una API pública ([JSONPlaceholder](https://jsonplaceholder.typicode.com/)) y muestra una lista de ítems con paginación. Además, al hacer clic en un ítem, se muestran detalles adicionales.
+
+### Tecnologías utilizadas
+- HTML
+- CSS (Bootstrap)
+- JavaScript (Fetch API)
+
+### Cómo funciona
+1. La página carga los primeros 5 ítems de la API.
+2. Los usuarios pueden navegar entre las páginas usando los botones "Anterior" y "Siguiente".
+3. Al hacer clic en "Ver más detalles", se muestra información adicional sobre el ítem seleccionado.
