@@ -1,0 +1,3 @@
+[submodule "proweb_petroskill"]
+	path = proweb_petroskill
+	url = https://github.com/omarcitol/proweb_petroskill.git
