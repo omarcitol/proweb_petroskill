@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Inspección y Control de Calidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto en blanco */
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #000); /* Degradado azul oscuro a negro */
+            color: #fff;
+            padding: 40px 0;
+        }
+        header h1 {
+            font-size: 2.5rem; /* Título más pequeño */
+            font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+            padding: 15px 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: linear-gradient(135deg, #003366, #000); /* Degradado azul oscuro a negro */
+            color: #fff;
+            padding: 20px 0;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            background: linear-gradient(135deg, #00509e, #003366); /* Degradado azul medio a oscuro */
+            margin: 5px;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            border: 2px solid #00509e; /* Borde más grueso */
+        }
+        .navbar-nav .nav-link:hover {
+            background: linear-gradient(135deg, #003366, #00509e); /* Degradado inverso al hacer hover */
+            transform: translateY(-3px); /* Efecto hover dinámico */
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #1a1a1a; /* Fondo oscuro para las secciones */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            border: 3px solid #00509e; /* Borde más grueso */
+        }
+        section:hover {
+            transform: translateY(-5px); /* Efecto hover dinámico */
+            border-color: #fff; /* Borde blanco al hacer hover */
+        }
+        .card {
+            border: 3px solid #00509e; /* Borde más grueso */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background: #1a1a1a; /* Fondo oscuro para las cartas */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #fff; /* Borde blanco al hacer hover */
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #00509e, #003366); /* Degradado azul medio a oscuro */
+            border: 2px solid #00509e; /* Borde más grueso */
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #003366, #00509e); /* Degradado inverso al hacer hover */
+            transform: translateY(-3px); /* Efecto hover dinámico */
+        }
+        .pagination {
+            justify-content: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        .logo {
+            width: 150px; /* Logo más grande */
+            height: auto;
+        }
+        .flag {
+            width: 60px; /* Bandera más grande */
+            height: auto;
+            margin: 0 10px; /* Espacio entre logos y texto */
+        }
+        h2 {
+            color: #fff; /* Títulos en blanco */
+        }
+        .card-title, .card-text {
+            color: #fff; /* Texto en blanco dentro de las cartas */
+        }
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; /* Espacio entre logos y texto */
+        }
+        /* Estilos para los detalles de la API */
+        .card-body p {
+            color: #fff; /* Texto en blanco dentro de los detalles */
+        }
+        .card-body div[id^="details"] {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #1a1a1a; /* Fondo oscuro para los detalles */
+            border-radius: 8px;
+            border: 1px solid #00509e; /* Borde azul */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <img src="Evaluacion1/Oil_And_Gas_Logo_Design_Vector_Template-removebg-preview.png" alt="Logo Inversiones Ralex" class="logo">
+        <h1 class="fade-in">Servicios de Inspección y Control de Calidad</h1>
+        <img src="Evaluacion1/BanderaVnzl.jpg" alt="Bandera Venezuela" class="flag">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#api">API</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Sección: Sobre Nosotros -->
+        <section id="sobre-nosotros" class="my-5 fade-in">
+            <h2 class="text-center mb-4">Sobre Nosotros</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Somos una empresa líder en servicios de inspección y control de calidad para la industria del petróleo y gas. Con más de 20 años de experiencia, nos especializamos en garantizar la seguridad y eficiencia de las operaciones mediante ensayos no destructivos y soluciones innovadoras.</p>
+                    <p>En el año 2025, seguimos comprometidos con la excelencia, utilizando tecnologías de vanguardia para adaptarnos a los desafíos de la industria.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="Evaluacion1/Petroleo.jpg" alt="Petróleo y Gas" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Servicios -->
+        <section id="servicios" class="my-5 fade-in">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="Evaluacion1/Inspeccion.webp" alt="Inspección Estructural" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspección de Estructuras</h5>
+                            <p class="card-text">Evaluación de estructuras y recipientes para garantizar su integridad y seguridad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="Evaluacion1/ControlCalidad.jpg" alt="Control de Calidad" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Control de Calidad</h5>
+                            <p class="card-text">Aseguramiento de calidad en herramientas y tuberías para operaciones de perforación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="Evaluacion1/EnsayosNoDestructivos.jpg" alt="Ensayos No Destructivos" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensayos No Destructivos</h5>
+                            <p class="card-text">Técnicas avanzadas para evaluar materiales sin dañarlos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Proyectos -->
+        <section id="proyectos" class="my-5 fade-in">
+            <h2 class="text-center mb-4">Proyectos Recientes</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="Evaluacion1/offshore.webp" alt="Proyecto Inspección" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspección de Plataformas Offshore</h5>
+                            <p class="card-text">Realizamos inspecciones en plataformas marinas para garantizar su seguridad y eficiencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="Evaluacion1/inspeccion tuberias.jpg" alt="Proyecto Calidad" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Control de Calidad en Tuberías</h5>
+                            <p class="card-text">Implementamos protocolos de calidad en tuberías para operaciones de producción.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: API -->
+        <section id="api" class="my-5 fade-in">
+            <h2 class="text-center mb-4">API</h2>
+            <div id="api-items" class="row">
+                <!-- Ítems de la API -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspección de Equipos</h5>
+                            <p class="card-text">Datos actualizados sobre el estado de los equipos en tiempo real.</p>
+                            <button class="btn btn-primary" onclick="showDetails('details1')">Ver más detalles</button>
+                            <div id="details1" style="display: none;">
+                                <p>Nuestra API proporciona datos en tiempo real sobre el estado de los equipos, permitiendo a los usuarios monitorear y gestionar la integridad de los mismos de manera eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitoreo de Calidad</h5>
+                            <p class="card-text">Información en tiempo real sobre los estándares de calidad en operaciones.</p>
+                            <button class="btn btn-primary" onclick="showDetails('details2')">Ver más detalles</button>
+                            <div id="details2" style="display: none;">
+                                <p>La API de Monitoreo de Calidad ofrece información detallada sobre los estándares de calidad en las operaciones, facilitando la toma de decisiones y la mejora continua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Contacto -->
+        <section id="contacto" class="my-5 fade-in">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <p class="text-center">Si deseas obtener más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros:</p>
+            <p class="text-center">Email: <a href="mailto:InversionesRalex@gmail.com">InversionesRalex@gmail.com</a></p>
+        </section>
+
+        <!-- Paginación -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#sobre-nosotros">1</a></li>
+                <li class="page-item"><a class="page-link" href="#servicios">2</a></li>
+                <li class="page-item"><a class="page-link" href="#proyectos">3</a></li>
+                <li class="page-item"><a class="page-link" href="#api">4</a></li>
+                <li class="page-item"><a class="page-link" href="#contacto">5</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="text-center py-3">
+        <div class="footer-content">
+            <img src="Evaluacion1/Oil_And_Gas_Logo_Design_Vector_Template-removebg-preview.png" alt="Logo Inversiones Ralex" class="logo">
+            <p>&copy; 2025 Servicios de Inspección y Control de Calidad. Todos los derechos reservados.</p>
+            <img src="Evaluacion1/BanderaVnzl.jpg" alt="Bandera Venezuela" class="flag">
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
