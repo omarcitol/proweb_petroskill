@@ -40,6 +40,65 @@ Pasos para Crear el Repositorio
 ## Descripción
 
 Esta rama contiene una landing page simple desarrollada solo con HTML. La estructura incluye secciones de "Sobre Nosotros", "Servicios", "Proyectos Recientes" y "Contacto".
+Adjunto codigo
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Simple</title>
+</head>
+<body>
+    <!-- Sección: Sobre Nosotros -->
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos una empresa líder en servicios de inspección y control de calidad para la industria del petróleo y gas. 
+            Con más de 20 años de experiencia, nos especializamos en garantizar la seguridad y eficiencia de las operaciones 
+            mediante ensayos no destructivos y soluciones innovadoras.
+        </p>
+    </section>
+
+    <!-- Sección: Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div>
+            <h3>Inspección de Estructuras</h3>
+            <p>Evaluación de estructuras y recipientes para garantizar su integridad y seguridad.</p>
+        </div>
+        <div>
+            <h3>Control de Calidad</h3>
+            <p>Aseguramiento de calidad en herramientas y tuberías para operaciones de perforación.</p>
+        </div>
+        <div>
+            <h3>Ensayos No Destructivos</h3>
+            <p>Técnicas avanzadas para evaluar materiales sin dañarlos.</p>
+        </div>
+    </section>
+
+    <!-- Sección: Proyectos Recientes -->
+    <section id="proyectos">
+        <h2>Proyectos Recientes</h2>
+        <div>
+            <h3>Inspección de Plataformas Offshore</h3>
+            <p>Realizamos inspecciones en plataformas marinas para garantizar su seguridad y eficiencia.</p>
+        </div>
+        <div>
+            <h3>Control de Calidad en Tuberías</h3>
+            <p>Implementamos protocolos de calidad en tuberías para operaciones de producción.</p>
+        </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas obtener más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros:</p>
+        <p>Email: <a href="mailto:InversionesRalex@gmail.com">InversionesRalex@gmail.com</a></p>
+    </section>
+
+</body>
+</html>
 
 ## Archivos
 
@@ -61,8 +120,8 @@ En esta evaluación se agregó dinamismo a la landing page utilizando el framewo
 - Se utilizaron componentes de Bootstrap como tarjetas (`cards`) y listas (`list-group`).
 
 - Evaluación Nro. 4
-Descripción
-En esta evaluación se alojó la landing page en una plataforma de hosting utilizando GitHub Pages. Se configuró correctamente la rama y los archivos necesarios para que la página sea accesible en línea.
+  Descripción
+  En esta evaluación se alojó la landing page en una plataforma de hosting utilizando GitHub Pages. Se configuró correctamente la rama y los archivos necesarios para que la página sea accesible en línea.
 
 📌 URL del sitio web: https://omarcitol.github.io/proweb_petroskill/
 
@@ -82,3 +141,21 @@ Correcciones y ajustes
 Se revisaron y corrigieron posibles errores en la estructura HTML.
 Se optimizó el código para asegurar compatibilidad con GitHub Pages.
 📌 Estado actual: ✅ La landing page está funcionando correctamente en GitHub Pages.
+
+Evaluación Nro. 5
+
+Descripción
+
+Se agregó una nueva sección API en la landing page.
+
+Esta sección muestra una lista de elementos obtenidos desde una API pública.
+
+Se implementó paginación para visualizar los datos de manera organizada.
+
+Funcionalidades
+
+Listado de datos: Se obtiene información en tiempo real desde una API.
+
+Paginación: Los datos se dividen en páginas para una mejor navegación.
+
+(Opcional) Ver detalles: Al hacer clic en un elemento, se despliega más información sobre él.

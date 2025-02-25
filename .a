@@ -1,0 +1,34 @@
+<body>
+    <main class="container">
+        <!-- Sección: Servicios -->
+        <section id="servicios" class="my-5 fade-in">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspección de Estructuras</h5>
+                            <p class="card-text">Evaluación de estructuras y recipientes para garantizar su integridad y seguridad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Control de Calidad</h5>
+                            <p class="card-text">Aseguramiento de calidad en herramientas y tuberías para operaciones de perforación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensayos No Destructivos</h5>
+                            <p class="card-text">Técnicas avanzadas para evaluar materiales sin dañarlos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
